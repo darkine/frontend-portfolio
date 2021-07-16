@@ -51,6 +51,10 @@ header {
     align-items: center;
 }
 
+header .container img {
+    display: none;
+}
+
 header .container {
     width: 50%;
     height: fit-content;
@@ -80,14 +84,62 @@ nav img {
     height: 65px;
 }
 
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
 nav ul a {
     font-size: 24px;
     color: var(--green);
     text-decoration: none;
-    margin: 60px;
 }
 
 section {
     height: 1500px;
     background: purple;
+}
+
+nav ul a:hover {
+    color: white;
+}
+
+/* RESPONSIVIDADE */
+
+/* tablet */
+@media (max-width: 767px) {
+    header .container {
+        width: 100%;
+        background: red;
+    }
+
+    header .container img {
+        display: inline;
+        margin: 60px 0;
+        height: 65px;
+    }
+
+    nav {
+        padding: 0 30px;
+    }
+    
+    nav img {
+        display: none;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul a {
+        font-size: 16px;
+    }
+}
+
+/* smartphone */
+@media (max-width: 480px) {
+    header .container {
+        padding: 0 40px;
+    }
 }
