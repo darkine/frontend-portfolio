@@ -5,7 +5,7 @@
     --green: #15cdcb;
     --bg-dark: #212226;
     --light-grey: #E0DEDE;
-    --menu-height: 100px;
+    --menu-height: 75px;
 }
 * {
     box-sizing: border-box;
@@ -39,7 +39,6 @@ button {
     border: 0px;
     border-radius: 16px;
     padding: 8px 35px;
-    color: white;
     font-weight: bold;
     font-size: 18px;
 }
@@ -51,15 +50,16 @@ header {
     align-items: center;
 }
 
-header .container img {
-    display: none;
-}
-
 header .container {
     width: 50%;
     height: fit-content;
     padding: 0 100px;
 }
+
+header .container img {
+    display: none;
+}
+
 
 header .container  h1 {
     color: var(--green);
@@ -111,7 +111,6 @@ nav ul a:hover {
 @media (max-width: 767px) {
     header .container {
         width: 100%;
-        background: red;
     }
 
     header .container img {
