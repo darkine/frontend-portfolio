@@ -29,8 +29,12 @@ h2 {
     font-size: 24px;
 }
 
+h1, h2 {
+    margin: 0;
+    font-weight: 400;
+}
+
 p {
-    font-size: 16px;
     color: var(--light-grey);
 }
 
@@ -73,15 +77,16 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    height: var(--menu-height);
+    background: var(--bg-dark);
+    padding: 0 100px;
     position: sticky;
     top: 0;
-    background: var(--bg-dark);
-    height: var(--menu-height);
-    padding: 0 100px;
 }
 
 nav img {
-    height: 65px;
+    height: 45px;
 }
 
 nav ul {
@@ -94,7 +99,6 @@ nav ul a {
     font-size: 24px;
     color: var(--green);
     text-decoration: none;
-    margin: 0 35px;
 }
 
 section {
@@ -108,13 +112,27 @@ nav ul a:hover {
 
 /* RESPONSIVIDADE */
 
+/* small desktops */
+@media (max-width: 1000px) {
+    header .container {
+        width: 100%;
+    }
+    
+    nav ul a {
+        font-size: 18px;
+    }
+
+    nav {
+        padding: 0 30px;
+    }
+}
+
 /* tablet */
 @media (max-width: 767px) {
 
     header .container img {
         display: inline;
         margin-bottom: 70px;
-        height: 65px;
     }
     
     nav img {
@@ -129,22 +147,6 @@ nav ul a:hover {
         font-size: 16px;
     }
 }
-
-/* small desktops */
-@media (max-width: 1000px) {
-    header .container {
-        width: 100%;
-    }
-
-    nav ul a {
-        font-size: 18px;
-    }
-
-    nav {
-        padding: 0 30px;
-    }
-}
-
 
 /* smartphone */
 @media (max-width: 480px) {
