@@ -77,7 +77,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     height: var(--menu-height);
     background: var(--bg-dark);
     padding: 0 100px;
@@ -158,6 +157,12 @@ nav ul a:hover {
 
     nav ul a svg {
         display: block;
+        margin: 0 auto 10px;
+    }
+    
+    button {
+        display: block;
+        margin-bottom: 100px;
     }
 }
 
@@ -168,20 +173,14 @@ nav ul a:hover {
     }
 
     nav {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        top: unset;
         padding: 0 15px;
     }
 
     nav ul a {
         font-size: 12px;
-    }
-
-    nav ul a svg {
-        display: block;
-        margin: 0 auto 10px;
-    }
-    
-    button {
-        display: block;
-        margin-bottom: 100px;
     }
 }
