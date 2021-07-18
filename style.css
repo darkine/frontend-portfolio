@@ -6,6 +6,7 @@
   --bg-dark: #212226;
   --light-grey: #e0dede;
   --menu-height: 75px;
+  --dark-grey-card: #2F3034;
 }
 * {
   box-sizing: border-box;
@@ -148,6 +149,64 @@ nav ul a svg {
   transform: rotate(-3.3deg);
   border: 1px solid var(--green);
 }
+
+.services {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.services h2 {
+    font-weight: 400px;
+    font-size: 24px;
+    font-style: normal;
+    line-height: 36px;
+}
+
+.services .services-container {
+    width: 100%;
+    display: flex;
+}
+
+.services .services-container .services-card {
+    background: var(--dark-grey-card);
+    margin: 70px 0 0 20px;
+    padding: 30px;
+    border: 1px solid var(--purple);
+    border-radius: 16px;
+    color: var(--light-grey);
+}
+
+.services .services-container .services-card img {
+    width: 80px;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* RESPONSIVIDADE */
 
