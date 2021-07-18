@@ -229,6 +229,8 @@ nav ul a svg{
         bottom: 0;
         top: unset;
         padding: 0 15px;
+        height: 100px;
+        /* margin-bottom: 50px; */
         }
 
     nav ul a {
