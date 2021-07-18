@@ -6,7 +6,7 @@
   --bg-dark: #212226;
   --light-grey: #e0dede;
   --menu-height: 75px;
-  --dark-grey-card: #2F3034;
+  --dark-grey-card: #2f3034;
 }
 * {
   box-sizing: border-box;
@@ -151,67 +151,41 @@ nav ul a svg {
 }
 
 .services {
-    text-align: center;
-    margin: 150px 0;
-    padding: 0 100px;
+  text-align: center;
+  margin: 150px 0;
+  padding: 0 100px;
 }
 
 .services .services-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 60px auto 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 60px auto 0;
 }
 
 .services .services-container .services-card {
-    max-width: 360px;
-    background: var(--dark-grey-card);
-    padding: 30px;
-    border: 1px solid var(--purple);
-    border-radius: 16px;
-    padding: 40px 25px;
+  max-width: 360px;
+  background: var(--dark-grey-card);
+  padding: 30px;
+  border: 1px solid var(--purple);
+  border-radius: 16px;
+  padding: 40px 25px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
 .services .services-container .services-card img {
-    margin: 40px;
-    width: 90px;
+  margin: 40px;
+  width: 90px;
 }
 
 .services-card + .services-card {
-    margin-left: 10px;
+  margin-left: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* RESPONSIVIDADE */
 
@@ -251,14 +225,19 @@ nav ul a svg {
   }
 
   .services .services-container {
-    flex-direction: column;
-    justify-content: space-between;
-}
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+  }
 
-.services .services-container .services-card {
-    margin: 15px auto;
-}
+  .services-card {
+      height: 394px;
+  }
 
+  .services-card + .services-card {
+      margin-left: 0;
+      margin-top: 30px;
+  }
 }
 
 /* tablet */
@@ -315,5 +294,14 @@ nav ul a svg {
   .about-me {
     padding: 40px;
     margin-bottom: 50px;
+  }
+
+  .services .services-container {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .services .services-container .services-card {
+    margin: 15px auto;
   }
 }
