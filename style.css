@@ -1,246 +1,245 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-    --purple: #5280e2;
-    --green: #15cdcb;
-    --bg-dark: #212226;
-    --light-grey: #E0DEDE;
-    --menu-height: 75px;
+  --purple: #5280e2;
+  --green: #15cdcb;
+  --bg-dark: #212226;
+  --light-grey: #e0dede;
+  --menu-height: 75px;
 }
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    margin: 0;
-    background: var(--bg-dark);
+html,
+body {
+  margin: 0;
+  background: var(--bg-dark);
 }
 
-body, button, input, selext, textarea {
-    font-family: 'Poppins', sans-serif;
-    color: white;
+body,
+button,
+input,
+selext,
+textarea {
+  font-family: "Poppins", sans-serif;
+  color: white;
 }
 
 h1 {
-    font-size: 44px;
+  font-size: 44px;
 }
 
 h2 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
-h1, h2 {
-    margin: 0;
-    font-weight: 400;
+h1,
+h2 {
+  margin: 0;
+  font-weight: 400;
 }
 
 p {
-    color: var(--light-grey);
+  color: var(--light-grey);
 }
 
 header .container button {
-    background: var(--purple);
-    border: 0px;
-    border-radius: 16px;
-    padding: 8px 35px;
-    font-weight: bold;
-    font-size: 18px;
+  background: var(--purple);
+  border: 0px;
+  border-radius: 16px;
+  padding: 8px 35px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .tittle-purple {
-    color: var(--purple);
+  color: var(--purple);
 }
 
 .tittle-green {
-    color: var(--green)
+  color: var(--green);
 }
 
-
 header {
-    height: calc(100vh - var(--menu-height)); /*altura do nav*/
-    display: flex;
-    align-items: center;
+  height: calc(100vh - var(--menu-height)); /*altura do nav*/
+  display: flex;
+  align-items: center;
 }
 
 header .container {
-    width: 50%;
-    height: fit-content;
-    padding: 0 100px;
+  width: 50%;
+  height: fit-content;
+  padding: 0 100px;
 }
 
 header .container img {
-    display: none;
+  display: none;
 }
 
 header .container button {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: var(--menu-height);
-    background: var(--bg-dark);
-    padding: 0 100px;
-    position: sticky;
-    top: 0;
-    z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--menu-height);
+  background: var(--bg-dark);
+  padding: 0 100px;
+  position: sticky;
+  top: 0;
+  z-index: 99;
 }
 
 nav img {
-    height: 45px;
+  height: 45px;
 }
 
 nav ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 nav ul a {
-    font-size: 24px;
-    color: var(--green);
-    text-decoration: none;
+  font-size: 24px;
+  color: var(--green);
+  text-decoration: none;
 }
 
-nav ul a svg{
-    display: none;
+nav ul a svg {
+  display: none;
 }
 
 .about-me {
-    display: flex;
-    padding: 100px;
+  display: flex;
+  padding: 100px;
 }
 
 .about-me .container {
-    width: 50%;
-    padding-right: 50px;
+  width: 50%;
+  padding-right: 50px;
 }
 
 .about-me .img-container {
-    width: 50%;
-    text-align: center;
-    position: relative; /* usado para fazer com que as linhas sejam absolute */
+  width: 50%;
+  text-align: center;
+  position: relative; /* usado para fazer com que as linhas sejam absolute */
 }
 
-
 .about-me .img-container img {
-    width: 70%;
-    height: 100%;
-    object-fit: cover;
-
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .about-me .img-container .line {
-    width: calc(70% + 50px);
-    height: calc(100% + 50px);
-    border: 1px solid var(--purple);
-    position: absolute;
-    top: -25px;
-    left: calc(50% - 35% - 25px);
+  width: calc(70% + 50px);
+  height: calc(100% + 50px);
+  border: 1px solid var(--purple);
+  position: absolute;
+  top: -25px;
+  left: calc(50% - 35% - 25px);
 }
 
 .about-me .img-container .line.green {
-    transform: rotate(-3.3deg);
-    border: 1px solid var(--green);
+  transform: rotate(-3.3deg);
+  border: 1px solid var(--green);
 }
-
-
 
 /* RESPONSIVIDADE */
 
 /* small desktops */
 @media (max-width: 1000px) {
-    header .container {
-        width: 100%;
-    }
-    
-    nav ul a {
-        font-size: 18px;
-    }
-    
-    nav ul a svg {
-        display: none;
-    }
+  header .container {
+    width: 100%;
+  }
 
-    nav {
-        padding: 0 30px;
-    }
+  nav ul a {
+    font-size: 18px;
+  }
 
-    .about-me {
-        flex-direction: column;
-    }
+  nav ul a svg {
+    display: none;
+  }
 
-    .about-me .container, .about-me .img-container {
-        width: 100%;
-    }
+  nav {
+    padding: 0 30px;
+  }
 
-    .about-me .container {
-        padding-right: 0;
-    }
+  .about-me {
+    flex-direction: column;
+  }
 
-    .about-me .img-container {
-        margin: 70px 0;
-    }
+  .about-me .container,
+  .about-me .img-container {
+    width: 100%;
+  }
+
+  .about-me .container {
+    padding-right: 0;
+  }
+
+  .about-me .img-container {
+    margin: 70px 0;
+  }
 }
 
 /* tablet */
 @media (max-width: 767px) {
+  header .container img {
+    display: inline;
+    margin-bottom: 70px;
+    height: 45px;
+  }
 
-    header .container img {
-        display: inline;
-        margin-bottom: 70px;
-        height: 45px;
-    }
-    
-    nav img {
-        display: none;
-    }
+  nav img {
+    display: none;
+  }
 
-    nav ul {
-        padding: 0;
-    }
+  nav ul {
+    padding: 0;
+  }
 
-    nav ul a {
-        font-size: 16px;
-    }
+  nav ul a {
+    font-size: 16px;
+  }
 
-    nav ul a svg {
-        display: block;
-        margin: 0 auto 10px;
-    }
-    
-    button {
-        display: block;
-        margin-bottom: 100px;
-    }
+  nav ul a svg {
+    display: block;
+    margin: 0 auto 10px;
+  }
+
+  button {
+    display: block;
+    margin-bottom: 100px;
+  }
 }
 
 /* smartphone */
 @media (max-width: 480px) {
-    header .container {
-        padding: 0 40px;
-    }
+  header .container {
+    padding: 0 40px;
+  }
 
-    nav {
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-        top: unset;
-        padding: 0 15px;
-        height: 100px;
-        /* margin-bottom: 50px; */
-        }
+  nav {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    top: unset;
+    padding: 0 15px;
+    height: 100px;
+    /* margin-bottom: 50px; */
+  }
 
-    nav ul a {
-        font-size: 12px;
-    }
+  nav ul a {
+    font-size: 12px;
+  }
 
-    .about-me {
-        padding: 40px;
-        margin-bottom: 50px;
-    }
-
-
+  .about-me {
+    padding: 40px;
+    margin-bottom: 50px;
+  }
 }
