@@ -223,6 +223,10 @@ nav ul a svg {
   .about-me .img-container {
     margin: 70px 0;
   }
+  
+  .services {
+      padding: 0;
+  }
 
   .services .services-container {
       flex-wrap: wrap;
@@ -303,5 +307,6 @@ nav ul a svg {
 
   .services .services-container .services-card {
     margin: 15px auto;
+    height: 390px;
   }
 }
