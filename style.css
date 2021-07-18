@@ -151,35 +151,40 @@ nav ul a svg {
 }
 
 .services {
-    width: 80%;
     text-align: center;
-    margin: 0 auto;
-}
-
-.services h2 {
-    font-weight: 400px;
-    font-size: 24px;
-    font-style: normal;
-    line-height: 36px;
+    margin: 150px 0;
+    padding: 0 100px;
 }
 
 .services .services-container {
-    width: 100%;
     display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 60px auto 0;
 }
 
 .services .services-container .services-card {
+    max-width: 360px;
     background: var(--dark-grey-card);
-    margin: 70px 0 0 20px;
     padding: 30px;
     border: 1px solid var(--purple);
     border-radius: 16px;
-    color: var(--light-grey);
+    padding: 40px 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
 .services .services-container .services-card img {
-    width: 80px;
-    margin: 20px;
+    margin: 40px;
+    width: 90px;
+}
+
+.services-card + .services-card {
+    margin-left: 10px;
 }
 
 
@@ -244,10 +249,20 @@ nav ul a svg {
   .about-me .img-container {
     margin: 70px 0;
   }
+
+  .services .services-container {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.services .services-container .services-card {
+    margin: 15px auto;
+}
+
 }
 
 /* tablet */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   header .container img {
     display: inline;
     margin-bottom: 70px;
