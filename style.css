@@ -38,13 +38,21 @@ p {
     color: var(--light-grey);
 }
 
-button {
+header .container button {
     background: var(--purple);
     border: 0px;
     border-radius: 16px;
     padding: 8px 35px;
     font-weight: bold;
     font-size: 18px;
+}
+
+.tittle-purple {
+    color: var(--purple);
+}
+
+.tittle-green {
+    color: var(--green)
 }
 
 
@@ -62,11 +70,6 @@ header .container {
 
 header .container img {
     display: none;
-}
-
-
-header .container  h1 {
-    color: var(--green);
 }
 
 header .container button {
@@ -104,13 +107,27 @@ nav ul a svg{
     display: none;
 }
 
-section {
-    height: 1500px;
-    background: purple;
+.about-me {
+    display: flex;
+    padding: 100px;
 }
 
-nav ul a:hover {
-    color: white;
+.about-me .container {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.about-me .img-container {
+    width: 50%;
+    text-align: center;
+}
+
+
+.about-me .img-container img {
+    width: 70%;
+    /* display: block;
+    margin-left: 0 auto; */
+
 }
 
 /* RESPONSIVIDADE */
