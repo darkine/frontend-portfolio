@@ -7,6 +7,7 @@
   --light-grey: #e0dede;
   --menu-height: 75px;
   --dark-grey-card: #2f3034;
+  --medium-grey: #2f3034;
 }
 * {
   box-sizing: border-box;
@@ -44,9 +45,12 @@ h2 {
 p {
   color: var(--light-grey);
 }
-header, .container, nav, .about-me, .services {
+header,
+.container,
+nav,
+.about-me,
+.services {
   background: var(--bg-dark);
-
 }
 
 header .container button {
@@ -198,8 +202,7 @@ nav ul a svg {
 
 .portfolio {
   padding: 0 100px;
-  height: 100vh;
-  margin-bottom: 10px;
+  height: 850px;
   text-align: center;
   background: url(assets/portfolio-bg.png);
 }
@@ -248,6 +251,50 @@ nav ul a svg {
   margin-left: 10px;
 }
 
+.curriculo {
+  padding: 0px 100px 100px 100px;
+  text-align: center;
+}
+
+.curriculo .curriculo-container {
+  display: flex;
+  margin-top: 120px;
+  justify-content: center;
+  align-items: center;
+}
+
+.curriculo .curriculo-container b,
+span {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.curriculo .curriculo-container .container-dados {
+  display: grid;
+  grid-template-columns: 150px auto;
+  grid-gap: 1rem; /* quebra de linha */
+  margin-left: 50px;
+}
+
+.curriculo-button {
+  background: var(--medium-grey);
+  border: 1px solid var(--purple);
+  color: var(--green);
+  font-weight: bold;
+  width: 426px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  margin-top: 80px;
+}
+
+.curriculo-button img {
+  margin: 0 20px 0px 0px;
+}
+
 /* RESPONSIVIDADE */
 
 @media (min-width: 1920px) {
@@ -257,13 +304,14 @@ nav ul a svg {
   }
 
   .services {
-    margin:0;
+    margin: 0;
   }
-  
+
   .services-container .services-card {
     margin-bottom: 50px;
   }
-  .portfolio {
+  .portfolio,
+  .curriculo {
     background: var(--bg-dark);
   }
 }
@@ -335,6 +383,22 @@ nav ul a svg {
   .portfolio-card + .portfolio-card {
     margin-top: 30px;
   }
+
+  .curriculo {
+    margin-top: 50px;
+  }
+
+  .curriculo .curriculo-container {
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+  .curriculo .curriculo-container .curriculo-img {
+    display: block;
+    margin: 0 auto 50px;
+    width: 100%;
+    max-width: 520px;
+  }
 }
 
 /* tablet */
@@ -401,5 +465,13 @@ nav ul a svg {
   .services .services-container .services-card {
     margin: 15px auto;
     height: 390px;
+  }
+
+  .curriculo {
+    padding: 0 20px;
+  }
+
+  .curriculo .curriculo-container .container-dados {
+    padding: 0 15px;
   }
 }
