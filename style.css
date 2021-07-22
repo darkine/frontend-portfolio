@@ -45,6 +45,7 @@ h2 {
 p {
   color: var(--light-grey);
 }
+
 header,
 .container,
 nav,
@@ -53,7 +54,7 @@ nav,
   background: var(--bg-dark);
 }
 
-header .container button {
+button {
   background: var(--purple);
   border: 0px;
   border-radius: 16px;
@@ -295,26 +296,39 @@ span {
   margin: 0 20px 0px 0px;
 }
 
-/* RESPONSIVIDADE */
-
-@media (min-width: 1920px) {
-  body {
-    background: black;
-    padding: 0 400px;
-  }
-
-  .services {
-    margin: 0;
-  }
-
-  .services-container .services-card {
-    margin-bottom: 50px;
-  }
-  .portfolio,
-  .curriculo {
-    background: var(--bg-dark);
-  }
+.contact {
+  max-width: 800px;
+  margin: auto;
+  padding: 100px;
+  text-align: center;
 }
+
+.contact h1 {
+  background: -webkit-linear-gradient(#15CDCB, #5280E2);
+  -webkit-background-clip: text; /* essa propriedade recorta o background de acordo com o texto inserido */
+  -webkit-text-fill-color: transparent; /* essa propriedade faz com que a cor do texto seja transparente */
+}
+
+.contact .container {
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact .container .contact-buttons {
+  width: 70%;
+  max-width: 360px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  text-align: center;
+}
+
+/* RESPONSIVIDADE */
 
 /* small desktops */
 @media (max-width: 1000px) {
@@ -398,6 +412,10 @@ span {
     margin: 0 auto 50px;
     width: 100%;
     max-width: 520px;
+  }
+
+  .curriculo-button {
+    margin-left:50px;
   }
 }
 
